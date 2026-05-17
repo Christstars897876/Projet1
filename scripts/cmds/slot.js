@@ -150,7 +150,7 @@ module.exports = {
     config: {
         name: "top",
         version: "6.2",
-        author: "Itachi Soma",
+        author: "chris st",
         role: 0,
         shortDescription: { en: "Top richest users" },
         longDescription: { en: "Displays the top 50 richest users with real names" },
