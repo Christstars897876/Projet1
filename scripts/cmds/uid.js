@@ -41,60 +41,46 @@ module.exports = {
 		let targetID = event.senderID;
 		let targetName = "You";
 
-	// Reply à un message
 		if (event.messageReply) {
 			targetID = event.messageReply.senderID;
-	}
-
-	// Tag
-		else if (Object.keys(event.mentions).length > 0) {
+	} else if (Object.keys(event.mentions).length > 0) {
 			targetID = Object.keys(event.mentions)[0];
 			targetName = event.mentions[targetID].replace("@", "");
-	}
-
-	// Lien FB
-		else if (args[0] && args[0].match(regExCheckURL)) {
+	} else if (args[0] && args[0].match(regExCheckURL)) {
 			try {
 				targetID = await findUid(args[0]);
 	} catch (e) {
 				return message.reply(`ERROR: ${e.message}`);
 	}
-	}
-
-	// Rien = soi-même
-		else if (!args[0]) {
+	} else if (!args[0]) {
 			targetID = event.senderID;
-	}
-
-		else {
+	} else {
 			return message.reply(getLang("syntaxError"));
 	}
 
-	// Récup nom si pas déjà fait
-		if (targetName === "You" || targetName === "You") {
+		if (targetName === "You") {
 			try {
 				const info = await api.getUserInfo(targetID);
 				targetName = info[targetID].name;
 	} catch (e) {}
 	}
 
-		const avatarUrl = `https://graph.facebook.com/${targetID}/picture?width=200&height=200`;
+	// 1. Envoie le message texte d'abord
+		await message.reply(`Voici l'UID de ${targetName} :`);
 
-	// Canvas
+	// 2. Génère le canvas
+		const avatarUrl = `https://graph.facebook.com/${targetID}/picture?width=200&height=200`;
 		const canvas = createCanvas(650, 200);
 		const ctx = canvas.getContext("2d");
 
-	// Fond
 		ctx.fillStyle = "#1c1e22";
 		ctx.fillRect(0, 0, 650, 200);
 
-	// Avatar
 		try {
 			const avatar = await loadImage(avatarUrl);
 			ctx.drawImage(avatar, 30, 30, 140, 140);
 	} catch (e) {}
 
-	// Ligne séparation
 		ctx.strokeStyle = "#444";
 		ctx.lineWidth = 2;
 		ctx.beginPath();
@@ -102,12 +88,10 @@ module.exports = {
 		ctx.lineTo(200, 170);
 		ctx.stroke();
 
-	// Texte profil
 		ctx.fillStyle = "#fff";
 		ctx.font = "bold 28px Arial";
 		ctx.fillText(targetName, 230, 70);
 
-	// UID
 		ctx.fillStyle = "#00bfff";
 		ctx.font = "bold 26px Arial";
 		ctx.fillText("UID:", 230, 115);
@@ -115,11 +99,11 @@ module.exports = {
 		ctx.font = "24px Arial";
 		ctx.fillText(targetID, 300, 115);
 
-	// Envoi
+	// 3. Envoie l'image juste après
 		const filePath = path.join(__dirname, `uid_${targetID}.png`);
 		fs.writeFileSync(filePath, canvas.toBuffer("image/png"));
 
-		message.reply({ attachment: fs.createReadStream(filePath) });
-		setTimeout(() => fs.unlinkSync(filePath), 5000);
+		await message.reply({ attachment: fs.createReadStream(filePath) });
+		fs.unlinkSync(filePath);
 	}
 };
