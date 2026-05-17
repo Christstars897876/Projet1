@@ -1,53 +1,54 @@
-<img src="https://i.ibb.co/Jwtyz83V/image.jpg" alt="banner">  
-<h1 align="center"><img src="https://i.ibb.co/LzQWN8Tk/image.jpg" width="22px"> RavenBot - Bot Chat Messenger Intelligent</h1>  
----
+<div align="center">
+  <img src="https://i.imgur.com/1OBaQZd.jpeg" width="90%" style="border-radius:12px; border: 2px solid #00FFFF;"/>
+</div>
+<h1 align="center">𝐌𝐈𝐍𝐀𝐓𝐎 𝐍𝐀𝐌𝐈𝐊𝐀𝐙𝐄 𝗖𝗵𝗮𝘁𝗯𝗼𝘁 𝗠𝗲𝘀𝘀𝗲𝗻𝗴𝗲𝗿</h1>
+## 🔐 Permission Levels
+<div align="center">
+  <img src="https://i.ibb.co/jZLYgts6/686197467-1343993427639007-956223238050985491-n-jpg-stp-dst-jpg-p480x480-tt6-nc-cat-108-ccb-1-7-nc.jpg" width="90%" style="border-radius:12px; border: 2px solid #00FFFF;"/>
+</div>
 
-## À propos
+<h1 align="center">𝙰𝙳𝙼𝙸𝙽𝙸𝚂𝚃𝚁𝙰𝚃𝙴𝚄𝚁 : 𝙲𝙷𝚁𝙸𝚂 𝚂𝚃</h1>
+<div align="center">
 
-RavenBot est un bot Messenger interactif puissant et polyvalent. Il intègre une intelligence conversationnelle avancée, des commandes utiles, des générateurs d'images, des systèmes d’événements automatisés et une personnalisation poussée. Conçu pour enrichir vos conversations, animer vos groupes et répondre à vos requêtes en temps réel, RavenBot est bien plus qu’un simple assistant : c’est votre compagnon numérique personnalisé.
+| Level | Role | Bar | Access |
+|:-----:|:----:|:---:|:------:|
+| 0 👥 | Standard User | `░░░░░░` | None |
+| 1 ⚔️ | Group Admin | `██░░░░` | Moderate |
+| 2 🤖 | VIP User | `███░░░` | Advanced |
+| 3 💎 | Premium User | `████░░` | Premium |
+| 4 👑 | Admin Bot | `█████░` | Full |
+| 5 🔧 | Developer | `██████` | High |
+| 6 🌟 | Creator | `██████` | **Highest** |
 
----
+</div>
+## 📊 Project Status
 
-## Description
+<div align="center">
 
-- Réponse automatique aux messages et réactions
-- Commandes personnalisables (jeux, infos, utilitaires, GPT, images IA, météo, etc.)
-- Génération d’images via IA directement depuis Messenger
-- Interface d’administration via un dashboard moderne
-- Système de permissions avancé et filtres de modération
-- Support multilingue (FR/EN)
-- Notifications automatisées (bienvenue, départ, etc.)
+| Module | Progress | State |
+|:------:|:--------:|:-----:|
+| 💻 Core Code | ![95%](https://img.shields.io/badge/95%25-■■■■■■■■■□-00CED1?style=flat-square) | ✅ Done |
+| 🧪 Testing | ![80%](https://img.shields.io/badge/80%25-■■■■■■■■□□-FFD700?style=flat-square) | 🔄 Active |
+| 📄 Docs | ![90%](https://img.shields.io/badge/90%25-■■■■■■■■■□-8A2BE2?style=flat-square) | ✅ Done |
+| ⚡ Performance | ![98%](https://img.shields.io/badge/98%25-■■■■■■■■■■-FF69B4?style=flat-square) | ✅ Done |
+| 🟢 Uptime | ![99%](https://img.shields.io/badge/99%25-■■■■■■■■■■-00FF7F?style=flat-square) | ✅ Live |
 
----
+</div>
 
-## Requête de commande
+## 🪪 Connect & Support
 
-[https://m.me/mariancrosss](https://m.me/mariancrosss). (cliquez pour faire une requête de commande au créateu)
+<div align="center">
 
-📋 faites aussi vos commandes Api / Bot personnalisé.
----
+<a href="https://www.facebook.com/profile.php?id=100094118835962">
+  <img src="https://img.shields.io/badge/-Facebook%20%7C%20Azadx69x-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
+</a>
+&nbsp;
+<a href="https://github.com/Christstars897876/Minato-Namikaze">
+  <img src="https://img.shields.io/badge/-GitHub%20%7C%20ncazad-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+&nbsp;
+<a href="https://github.com/Christstars897876/Minato-Namikaze/issues">
+  <img src="https://img.shields.io/badge/-Report%20a%20Bug-FF4444?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 
-## Note d'usage
-
-Vous devez avoir un compte Facebook dédié au bot uniquement sur le navigateur Kiwi Browser. Assurez-vous d'accorder la permission dans les groupes où vous voulez utiliser le bot au préalable. Ensuite, allez sur ce site [C3C Utility GitHub](https://github.com/c3cbot/c3c-ufc-utility) pour télécharger l'extension C3C Utility, que vous allez installer avec Kiwi Browser en utilisant l'option "Importer fichier ZIP". Une fois l'extension importée et installée, connectez-vous à votre compte Facebook, ouvrez l'extension et vous verrez une nouvelle page. Sur cette page, sélectionnez "Import as" et choisissez "JSON" dans la liste. Un long code apparaîtra sur le tableau, vous devrez le copier en cliquant sur le bouton "Copy to clipboard 📋".
-
-Ce code copié doit être collé dans le fichier "account.dev.txt" et enregistré sur le bot. Une fois cela fait, quittez Kiwi Browser et n'y entrez plus. Continuez vos modifications dans "configs.dev.json", où vous devrez nommer le bot, ajouter un préfixe et inscrire votre UID entre guillemets dans la section "admin".
-
-Ensuite, allez sur [Render.com](https://render.com), créez un compte avec votre GitHub, liez votre compte et suivez les étapes. Dans l'interface Render, sélectionnez "Web Service" pour continuer. La nouvelle page affichera la liste de vos répertoires GitHub, sélectionnez simplement votre bot. Continuez à nommer votre bot à votre convenance, ignorez les autres détails et ne touchez à rien. Dans le champ "Root Directory", mettez "./". Naviguez ensuite en bas, sélectionnez le plan "Free", puis continuez pour déployer votre code. Une fois le déploiement terminé, attendez que le journal affiche une icône verte "Live" pour confirmer que le bot est en ligne ✅.
-
-Pour assurer une activité prolongée du bot, copiez simplement le lien dans le journal Render qui affiche le nom de votre bot suivi de ":render.com" et allez sur un site comme [BetterStack Uptime](https://betterstack.com) ou [Uptime Robot](https://uptimerobot.com). Créez un compte, puis collez le lien dans une nouvelle session.
-
-Pour toute explication approfondie, contactez : [https://m.me/mariancrosss](https://m.me/mariancrosss).  
-Toutefois, je ne garantis aucune réponse.
-
----
-
-## Crédit & Dédicace
-
-RavenBot est basé sur le code open-source de GoatBot, créé par NTKhang. Merci à lui pour ce projet exceptionnel qui a permis le développement de cette version améliorée et francisée.
-
-Contributeur :
-Amado Shirogane
-[https://m.me/61573686827313](https://m.me/61573686827313).
-
-RENZ API : https://api.oculux.xyz
+</div>
